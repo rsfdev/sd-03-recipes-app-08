@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './styles/App.css';
+import Comidas from './pages/Comidas';
 
 function App() {
   return (
     <div id="meals" className="meals">
       <Router>
         <Switch>
-          <Route to="/">{}</Route>
+          <Route to="/"><Comidas/></Route>
           <Route to="/comidas">{}</Route>
           <Route to="/bebidas">{}</Route>
           <Route to="/comidas/:id">{}</Route>
