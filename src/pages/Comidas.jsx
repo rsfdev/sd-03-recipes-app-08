@@ -22,15 +22,15 @@ export default function Comidas() {
         <Header iconProfile={profileIcon} iconSearch={searchIcon} title="Comidas" />
         {botoes.map((category) => <button>{category.strCategory}</button>)}
         <ul>{cards.map((food) =>
-            <div className="card">
-              <img src={food.strMealThumb} alt="food" />
-              <p>{food.strMeal}</p>
-            </div>)}
+          <div className="card">
+            <img src={food.strMealThumb} alt="food" />
+            <p>{food.strMeal}</p>
+          </div>)}
         </ul>
         <Footer />
       </React.Fragment>
     );
-  } 
+  }
   return (
     <React.Fragment>
       <Header iconProfile={profileIcon} iconSearch={searchIcon} title="Comidas" />
