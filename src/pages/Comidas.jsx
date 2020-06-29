@@ -32,11 +32,11 @@ export default function Comidas() {
     }
     else {
         return (
-            <>
+            <React.Fragment>
                 <Header iconProfile={profileIcon} iconSearch={searchIcon} title="Comidas"/>
                 <p>Loading...</p>
                 <Footer/>
-            </>
+            </React.Fragment>
         );
     }
 }
