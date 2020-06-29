@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
-import { getFoodList, getFoodsCategoriesList, getFoodByCategorie } from '../services/meals&drinksAPI';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { getFoodList, getFoodsCategoriesList } from '../services/meals&drinksAPI';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import profileIcon from '../images/profileIcon.svg';
@@ -19,7 +18,7 @@ export default function Comidas() {
         const botoes = categoria.meals.slice(0, 5);
         const cards = comida.meals.slice(0, 12);
         return (
-            <>
+            <React.Fragment>
                 <Header iconProfile={profileIcon} iconSearch={searchIcon} title="Comidas"/>
                 {botoes.map(category => <button>{category.strCategory}</button>)}
                 <ul>{cards.map(food =>
@@ -28,7 +27,7 @@ export default function Comidas() {
                         <p>{food.strMeal}</p>
                     </div>)}</ul>
                 <Footer/>
-            </>
+            </React.Fragment>
             );
     }
     else {

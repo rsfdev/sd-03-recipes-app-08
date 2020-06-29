@@ -8,7 +8,7 @@ function App() {
     <div id="meals" className="meals">
       <Router>
         <Switch>
-          <Route to="/"><Comidas/></Route>
+          <Route to="/"><Comidas /></Route>
           <Route to="/comidas">{}</Route>
           <Route to="/bebidas">{}</Route>
           <Route to="/comidas/:id">{}</Route>
